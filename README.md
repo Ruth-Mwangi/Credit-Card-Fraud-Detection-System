@@ -8,7 +8,7 @@ This project is a credit card fraud detection system developed to identify and p
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+## Getting Started
 
 ### Prerequisites
 
@@ -16,16 +16,31 @@ This project is a credit card fraud detection system developed to identify and p
 - [Python](https://www.python.org/) (version >= 3.6)
 - Python packages listed in the `requirements.txt` file
 
-### Steps
+### Installation
 
 1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/Ruth-Mwangi/Credit-Card-Fraud-Detection-System.git
    cd Credit-Card-Fraud-Detection-System
-   pip install -r requirements.txt
-   mkdir data/raw
    ```
+2. **Create and Activate Virtual Environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. **Install Requirements**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Create Data Directory**
+   ```bash
+   mkdir data/raw
+   mkdir data/processed
+   ```
+5. **Download Data and Add To data/raw Directory**
+   [Download data here](https://www.kaggle.com/code/patriciabrezeanu/credit-card-fraud-detection-with-tensorflow/input)
+
 
 ## Project-Structure
 
