@@ -24,13 +24,13 @@ This project is a credit card fraud detection system developed to identify and p
    git clone https://github.com/Ruth-Mwangi/Credit-Card-Fraud-Detection-System.git
    cd Credit-Card-Fraud-Detection-System
    pip install -r requirements.txt
+   mkdir data/raw
    ```
 
 ## Project-Structure
 
 ```bash
 |-- data/                   # Contains raw and processed data
-|-- notebooks/              # Jupyter notebooks for data preprocessing, model training, and evaluation
 |-- src/                    # Source code for PySpark scripts
 |-- requirements.txt        # List of Python packages required for the project
 |-- .gitignore              # Specifies files and directories to be ignored by Git
