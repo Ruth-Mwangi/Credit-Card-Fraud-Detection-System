@@ -3,10 +3,16 @@ This project is a credit card fraud detection system developed to identify and p
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+ [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Data Preparation](#data-preparation)
+  - [Data Visualization](#data-visualization)
+  - [Machine Learning](#machine-learning)
+- [Model Architecture](#model-architecture)
+- [Results](#results)
+
 
 ## Getting Started
 
@@ -52,3 +58,41 @@ This project is a credit card fraud detection system developed to identify and p
 |-- LICENSE                 # Project license information
 |-- README.md               # Project README file
 ```
+## Usage
+
+### Data Preparation
+Use the provided script to load and preprocess the dataset:
+
+```bash
+python src/data-preprocessing/data_preparation.py
+```
+Ensure that you have the dataset in CSV format at the specified input path (../data/raw/creditcard.csv). The script will load the data into a Spark DataFrame, display its schema and the top 5 rows, and calculate the ratios of fraudulent and non-fraudulent cases.
+
+### Data Visualization
+Use the provided script to visualize the data set:
+```bash
+python src/visualization/visualization.py
+```
+### Machine Learning
+
+#### Split Test and Train Data
+
+Before training the machine learning model, it's essential to split the dataset into training and testing sets. Execute the following script:
+
+```bash
+
+python ml.py
+```
+## Results
+
+### Model Performance Metrics
+
+After training and evaluating the credit card fraud detection model, the following performance metrics were obtained:
+
+- **Accuracy:** 0.9969088917935492
+- **Precision:** 0.9985605998517197
+- **Recall (Sensitivity):** 0.9969088917935492
+- **F1-Score:** 0.9975
+
+These metrics provide an overview of how well the model is performing in detecting fraudulent transactions. The high accuracy indicates that the model is generally effective, while precision, recall, and F1-Score offer insights into the model's ability to correctly identify fraud cases.
+
